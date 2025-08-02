@@ -4,210 +4,1161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADU Digital Marketer | Professional Digital Marketing Services in Kozhikode</title>
-    <meta name="description" content="ADU Digital Marketer provides comprehensive digital marketing services including SEO, web development, social media marketing, and more in Kozhikode, Kerala.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Schema markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ADU Digital Marketer",
-      "image": "https://www.adudigitalmarketer.com/logo.png",
-      "@id": "",
-      "url": "https://www.adudigitalmarketer.com",
-      "telephone": "+918075551892",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kozhikode",
-        "addressLocality": "Kozhikode",
-        "addressRegion": "Kerala",
-        "postalCode": "",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 11.2588,
-        "longitude": 75.7804
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/adudigitalmarketer",
-        "https://www.instagram.com/adudigitalmarketer",
-        "https://www.linkedin.com/company/adudigitalmarketer"
-      ] 
-    }
-    </script>
+    <meta name="description" content="ADU Digital Marketer offers comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, Web Development and more in Kozhikode, Kerala.">
+    <meta name="keywords" content="digital marketing, SEO, Google Ads, Facebook Ads, web development, social media marketing, Kozhikode, Kerala">
+    <meta name="author" content="ADU Digital Marketer">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    
+    <!-- Open Graph / Social Media Share Thumbnail -->
+    <meta property="og:title" content="ADU Digital Marketer | Professional Digital Marketing Services">
+    <meta property="og:description" content="Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing and more in Kozhikode, Kerala.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=ADU+Digital+Marketer">
+    <meta property="og:url" content="https://adudigitalmarketer.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #6c63ff;
+            --secondary-color: #4d44db;
+            --accent-color: #ff6584;
+            --dark-color: #2d3748;
+            --light-color: #f7fafc;
+            --gradient-bg: linear-gradient(135deg, #6c63ff 0%, #4d44db 100%);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-brand i {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            color: var(--dark-color);
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline-light {
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-left: 15px;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .section-title {
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .about-text {
+            padding-right: 30px;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: var(--gradient-bg);
+            color: white;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(108, 99, 255, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-info h5 {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(108, 99, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+        
+        .contact-text h5 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .contact-text a {
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(108, 99, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Floating Action Buttons */
+        .fab-container {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 999;
+        }
+        
+        .fab-main {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(108, 99, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .fab-main:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .fab-options {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .fab-options.active {
+            opacity: 1;
+            visibility: visible;
+            bottom: 80px;
+        }
+        
+        .fab-option {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .fab-option:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 991.98px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .hero {
+                padding: 80px 0;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .btn-outline-light {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .fab-container {
+                bottom: 20px;
+                left: 20px;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="/" class="logo">
-                <img src="images/logo.png" alt="ADU Digital Marketer Logo">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-rocket"></i> ADU DIGITAL MARKETER
             </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="btn-primary">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
-                <h1>Transform Your Digital Presence</h1>
-                <p>Professional digital marketing solutions tailored to grow your business online</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn-primary">Get Started</a>
-                    <a href="services.html" class="btn-secondary">Our Services</a>
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content animate-on-scroll">
+                    <h1>Grow Your Business With Our Digital Marketing Solutions</h1>
+                    <p>We help businesses in Kozhikode and beyond to establish a strong online presence, generate leads, and increase sales through strategic digital marketing.</p>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-outline-light">Our Services</a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-image.png" alt="Digital Marketing Illustration">
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
-    <section class="services-preview">
-        <div class="container">
-            <h2>Our Digital Marketing Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Custom websites designed to convert visitors into customers.</p>
-                    <a href="services/web-development.html">Learn More</a>
+                <div class="col-lg-6 hero-image animate-on-scroll">
+                    <img src="https://via.placeholder.com/600x500.png?text=Digital+Marketing" alt="Digital Marketing" class="img-fluid">
                 </div>
-                <!-- More service cards... -->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about" id="about">
         <div class="container">
-            <div class="about-image">
-                <img src="images/about-image.jpg" alt="About ADU Digital Marketer">
-            </div>
-            <div class="about-content">
-                <h2>About ADU Digital Marketer</h2>
-                <p>We're a Kozhikode-based digital marketing agency dedicated to helping businesses thrive online through strategic marketing solutions.</p>
-                <ul class="about-features">
-                    <li><i class="fas fa-check"></i> Proven Results</li>
-                    <li><i class="fas fa-check"></i> Custom Strategies</li>
-                    <li><i class="fas fa-check"></i> Transparent Reporting</li>
-                </ul>
-                <a href="about.html" class="btn-primary">Our Story</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-slider">
-                <!-- Testimonial slides -->
+            <h2 class="section-title animate-on-scroll">About Us</h2>
+            <div class="row about-content animate-on-scroll">
+                <div class="col-lg-6 about-text">
+                    <h3>We Are ADU Digital Marketer</h3>
+                    <p>ADU Digital Marketer is a premier digital marketing agency based in Kozhikode, Kerala. We specialize in helping businesses of all sizes establish and grow their online presence through comprehensive digital marketing strategies.</p>
+                    <p>Our team of experts combines creativity, technical expertise, and data-driven approaches to deliver measurable results for our clients. We stay ahead of the curve by constantly adapting to the latest digital marketing trends and technologies.</p>
+                    <p>Whether you're a local business looking to attract more customers or a brand aiming for national recognition, we have the tools and expertise to help you succeed in the digital landscape.</p>
+                </div>
+                <div class="col-lg-6 about-image">
+                    <img src="https://via.placeholder.com/600x400.png?text=About+Us" alt="About ADU Digital Marketer" class="img-fluid">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Services Section -->
+    <section class="services" id="services">
         <div class="container">
-            <h2>Ready to Grow Your Business Online?</h2>
-            <p>Contact us today for a free consultation and digital marketing strategy.</p>
-            <a href="contact.html" class="btn-primary">Get Your Free Consultation</a>
+            <h2 class="section-title animate-on-scroll">Our Services</h2>
+            <p class="text-center mb-5 animate-on-scroll">We offer a comprehensive range of digital marketing services to help your business thrive online.</p>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Website Development</h3>
+                        <p>Professional, responsive websites designed to convert visitors into customers. We create fast, secure, and SEO-friendly websites that represent your brand perfectly.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Services</h3>
+                        <p>Comprehensive search engine optimization to improve your website's visibility and rankings. Our strategies drive organic traffic and increase your online authority.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Google My Business</h3>
+                        <p>Optimize your Google My Business profile to dominate local search results. We'll help you manage reviews, posts, and information to attract more local customers.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Local SEO</h3>
+                        <p>Targeted strategies to help local businesses appear in "near me" searches. We optimize your online presence to attract customers in your specific geographic area.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3>Paid Advertising</h3>
+                        <p>Strategic Google Ads and Meta Ads campaigns that deliver measurable ROI. We create and manage targeted ad campaigns that convert viewers into customers.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Social Media Marketing</h3>
+                        <p>Engaging social media strategies for Instagram, Facebook, and more. We build your brand's presence, engage your audience, and drive traffic to your website.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Poster Design</h3>
+                        <p>Eye-catching designs for social media, print, and digital ads. Our creative team develops visuals that capture attention and communicate your message effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <h3>Content Marketing</h3>
+                        <p>Strategic content creation including blogs, reels, and posts. We develop content that engages your audience, builds trust, and drives conversions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Marketing Strategy</h3>
+                        <p>Comprehensive digital marketing plans tailored to your business goals. We analyze your market and create a roadmap for sustainable online growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 stat-item animate-on-scroll">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-text">Happy Clients</div>
+                </div>
+                <div class="col-md-3 col-6 stat-item animate-on-scroll">
+                    <div class="stat-number" data-count="250">0</div>
+                    <div class="stat-text">Projects Completed</div>
+                </div>
+                <div class="col-md-3 col-6 stat-item animate-on-scroll">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-text">Success Rate</div>
+                </div>
+                <div class="col-md-3 col-6 stat-item animate-on-scroll">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-text">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What Our Clients Say</h2>
+            <p class="text-center mb-5 animate-on-scroll">Don't just take our word for it - here's what our clients say:</p>
+            
+            <div class="row">
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                ADU Digital Marketer transformed our online presence. Our website traffic increased by 300% within 3 months of working with them. Highly recommended!
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/50x50.png?text=Client" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="author-info">
+                                    <h5>Rahul Menon</h5>
+                                    <p>CEO, Menon Traders</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                Their local SEO strategies helped our restaurant become the top result for "best biryani in Kozhikode". Our daily foot traffic doubled in just two months!
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/50x50.png?text=Client" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="author-info">
+                                    <h5>Fatima Ahmed</h5>
+                                    <p>Owner, Spice Route</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                The social media campaigns created by ADU Digital Marketer generated more leads than we ever thought possible. Their team is creative, professional, and results-driven.
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/50x50.png?text=Client" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="author-info">
+                                    <h5>Vijay Kumar</h5>
+                                    <p>Marketing Director, Kerala Tours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <p class="text-center mb-5 animate-on-scroll">Ready to take your digital presence to the next level? Contact us today!</p>
+            
+            <div class="row">
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Email Us</h5>
+                                <a href="mailto:adudigitalmarketing@gmail.com">adudigitalmarketing@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Call Us</h5>
+                                <a href="tel:+918075551892">+91 8075551892</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Location</h5>
+                                <p>Kozhikode, Kerala, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 animate-on-scroll">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.106348667283!2d75.7757243148029!3d11.258733891998976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65b3b7f3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sKozhikode%2C%20Kerala!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <img src="images/logo-white.png" alt="ADU Digital Marketer Logo">
-                    <p>Professional digital marketing services in Kozhikode, Kerala.</p>
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="#" class="footer-logo"><i class="fas fa-rocket me-2"></i>ADU DIGITAL MARKETER</a>
+                    <p>Your trusted partner for comprehensive digital marketing solutions in Kozhikode and beyond. We help businesses grow through strategic online marketing.</p>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> adudigitalmarketing@gmail.com</li>
-                        <li><i class="fas fa-phone"></i> +91 8075551892</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Kozhikode, Kerala, India</li>
-                    </ul>
+                
+                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="#">Website Development</a></li>
+                            <li><a href="#">SEO Services</a></li>
+                            <li><a href="#">Google My Business</a></li>
+                            <li><a href="#">Paid Advertising</a></li>
+                            <li><a href="#">Social Media Marketing</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-links">
+                        <h5>Contact Info</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> Kozhikode, Kerala</li>
+                            <li><i class="fas fa-phone-alt me-2"></i> +91 8075551892</li>
+                            <li><i class="fas fa-envelope me-2"></i> adudigitalmarketing@gmail.com</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            
+            <div class="copyright">
                 <p>&copy; 2023 ADU Digital Marketer. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Fixed Elements -->
-    <div class="fixed-contact">
-        <div class="contact-option whatsapp">
-            <a href="https://wa.me/918075551892" target="_blank">
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <div class="fab-main" id="fabMain">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="fab-options" id="fabOptions">
+            <a href="https://wa.me/918075551892" class="fab-option" target="_blank">
                 <i class="fab fa-whatsapp"></i>
             </a>
-        </div>
-        <div class="contact-option phone">
-            <a href="tel:+918075551892">
+            <a href="tel:+918075551892" class="fab-option">
                 <i class="fas fa-phone"></i>
             </a>
         </div>
     </div>
 
-    <div class="back-to-top">
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <script src="js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Floating action button toggle
+        const fabMain = document.getElementById('fabMain');
+        const fabOptions = document.getElementById('fabOptions');
+        
+        fabMain.addEventListener('click', function() {
+            fabOptions.classList.toggle('active');
+        });
+        
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Animate on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Start counter animation when stats section is in view
+        const statsSection = document.querySelector('.stats');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarToggler = document.querySelector('.navbar-toggler');
+                    const navbarNav = document.querySelector('.navbar-collapse');
+                    if (navbarNav.classList.contains('show')) {
+                        navbarToggler.click();
+                    }
+                    
+                    // Close FAB options if open
+                    if (fabOptions.classList.contains('active')) {
+                        fabOptions.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
